@@ -8,7 +8,7 @@ Here I will post small fixes that I end up making for the game while I play it.
 
 At SaveController.cs
 ```
-	public bool startNewGamePlus()
+  public bool startNewGamePlus()
   {
    ...
    //START - FIX RESET SAVE LOADING LEFT AFTER NEW GAME PLUS 2020_11_11

@@ -7,7 +7,7 @@ Here I will post small fixes that I end up making for the game while I play it.
 ![Mod](https://github.com/purpleorangegames/portalsofphereonsmallfixes/blob/main/Images/POPSmallFixLoadsLeftNGP.png?raw=true)
 
 At SaveController.cs
-'''
+```
 	public bool startNewGamePlus()
   {
    ...
@@ -42,4 +42,4 @@ At SaveController.cs
    //END - FIX RESET SAVE LOADING LEFT AFTER NEW GAME PLUS 2020_11_11
    ...
   }
-'''
+```

@@ -84,3 +84,72 @@ foreach (Stats s in GameController.instance.reserveCharacters)
 	GameController.instance.battleCharacterInfos.Add(item2);
 } 
 ```
+
+
+### Fix: Persistent character list at home
+
+This will allow characters that you remove from party or brothel to get sorted automatically instead of ending up at the end of the list.
+Also stop the sort selected being reset when you return to the list.
+
+![Mod](https://github.com/purpleorangegames/portalsofphereonsmallfixes/blob/main/Images/2020-11-12 19_28_24-PortalsOfPhereon.png
+?raw=true)
+
+showHomeTab(..) at TownInterfaceController
+Instead of always reseting to the default value now it will only reset when it is invalid.
+from
+```
+this.currentSort = 0;
+```
+to
+```
+if (this.currentSort < 0 || this.currentSort > 10)
+{
+	this.currentSort = 0;
+}
+```
+
+
+sortHome(..) at TownInterfaceController
+Duplicated the function moving the sorting to another function with the same name but that accepts no parameter.
+Since the old function, after sorting, calls to draw the list.
+Later when the list is updated will also call the sorting function, but the part that is only sorting so it won't end up in a loop.
+```
+public void sortHome(int index)
+{
+	if (index == this.currentSort)
+	{
+		this.sortAscending = !this.sortAscending;
+	}
+	else
+	{
+		this.currentSort = index;
+		this.sortAscending = false;
+	}
+	this.sortHome();
+	this.homePage = 0;
+	this.updateHome(true);
+}
+
+public void sortHome()
+{
+	int index = this.currentSort;
+	this.characterSelPage = 0;
+	if (!this.sortAscending)
+	{
+		switch (index)
+...
+		default:
+			return;
+		}
+	}
+}
+```
+
+
+updateHome(..) at TownInterfaceController
+Then we finally add the sort function at the start of the function that draws the list.
+```
+public void updateHome(bool alsoUpdateParty = true)
+{
+	this.sortHome();
+```

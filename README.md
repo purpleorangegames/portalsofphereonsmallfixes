@@ -91,7 +91,7 @@ foreach (Stats s in GameController.instance.reserveCharacters)
 This will allow characters that you remove from party or brothel to get sorted automatically instead of ending up at the end of the list.
 Also stop the sort selected being reset when you return to the list.
 
-![Mod](https://github.com/purpleorangegames/portalsofphereonsmallfixes/blob/main/Images/2020-11-12 19_28_24-PortalsOfPhereon.png?raw=true)
+![Mod](https://github.com/purpleorangegames/portalsofphereonsmallfixes/blob/main/Images/2020-11-12%2019_28_24-PortalsOfPhereon.png?raw=true)
 
 showHomeTab(..) at TownInterfaceController
 Instead of always reseting to the default value now it will only reset when it is invalid.

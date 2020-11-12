@@ -50,9 +50,9 @@ At SaveController.cs
 
 ### Fix: Position Character Tooltip so it won't be cut offscreen
 
-![Mod](https://github.com/purpleorangegames/portalsofphereonsmallfixes/blob/main/Images/2020-11-11 23_06_59-PortalsOfPhereon.png?raw=true)
+![Mod](https://github.com/purpleorangegames/portalsofphereonsmallfixes/blob/main/Images/2020-11-11%2023_06_59-PortalsOfPhereon.png?raw=true)
 
-![Mod](https://github.com/purpleorangegames/portalsofphereonsmallfixes/blob/main/Images/2020-11-11 23_05_38-PortalsOfPhereon.png?raw=true)
+![Mod](https://github.com/purpleorangegames/portalsofphereonsmallfixes/blob/main/Images/2020-11-11%2023_05_38-PortalsOfPhereon.png?raw=true)
 
 updateRoom() at BrothelInterfaceController.cs
 from:

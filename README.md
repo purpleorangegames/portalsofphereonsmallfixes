@@ -63,3 +63,24 @@ to:
 ```
 ToolTipManager.instance.showCharacterTooltip(tmp2, new Vector3(-727f, -305f, 0f));
 ```
+
+
+### Fix: Duplicated characters when removing them post battle, those duplicated would always be from reserve
+It seems that after removing they were being added again to the list when showBattleSymmary was run again
+
+![Mod](https://github.com/purpleorangegames/portalsofphereonsmallfixes/blob/main/Images/2020-11-12%2008_39_54-PortalsOfPhereon.png?raw=true)
+
+showBattleSummary() at InterfaceController
+
+add
+```
+if (firstOpen) 
+```
+to
+```
+foreach (Stats s in GameController.instance.reserveCharacters)
+{
+	BattleCharacterInfo item2 = new BattleCharacterInfo(s, false);
+	GameController.instance.battleCharacterInfos.Add(item2);
+} 
+```

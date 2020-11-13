@@ -46,7 +46,7 @@ Inside this folder you can put the plugins I've made, they are all DLLs, like th
 You can choose which to use, exclude the ones you don't want.
 
 You can download all the source code which contains the dlls or just the dlls here:
-https://github.com/purpleorangegames/portalsofphereonsmallfixes/releases/download/1/PortalOfPhereonSmallFixes_2020_11_13.7z
+https://github.com/purpleorangegames/portalsofphereonsmallfixes/releases/download/1.1/PortalOfPhereonSmallFixes_2020_11_13_V2.7z
 
 
 # Fixes explained, used dnSpy to make the modifications

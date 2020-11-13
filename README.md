@@ -8,7 +8,7 @@ Based on V0.14.0.1 from OCT 21, 2020
 
 ## If you have a save file which you played with mods then you shouldn't report bugs related to this save file, start a new game to verify if the bug really exist before reporting
 
-## Do not ask for help with the installation, use or to request new mods in any forum/discord/site, if you need to, contact me directly at tiagocc0@gmail.com
+## Do not ask for help with the installation, use or to request new mods in any forum/discord/site, if you need to, contact me directly at tiagocc0@gmail.com or DM me at discord tiago#5270
 
 # BepInEx
 I converted the the first three fixes to Harmony (you can check them below), you can then use BepInEx to load Harmony mods with the game.

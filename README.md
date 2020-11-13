@@ -11,7 +11,7 @@ Based on V0.14.0.1 from OCT 21, 2020
 ## Do not ask for help with the installation, use or to request new mods in any forum/discord/site, if you need to, contact me directly at tiagocc0@gmail.com or DM me at discord tiago#5270
 
 # BepInEx
-I converted the the first three fixes to Harmony (you can check them below), you can then use BepInEx to load Harmony mods with the game.
+I converted all four fixes to Harmony (you can check them below), you can then use BepInEx to load Harmony mods with the game.
 https://github.com/BepInEx/BepInEx
 
 I tested using this version, it needs to be x86 for this game in particular on the current version stated above.
@@ -47,8 +47,6 @@ You can choose which to use, exclude the ones you don't want.
 
 You can download all the source code which contains the dlls or just the dlls here:
 https://github.com/purpleorangegames/portalsofphereonsmallfixes/releases/download/1/PortalOfPhereonSmallFixes_2020_11_13.7z
-
-The last fix about the list sort persistence hasn't been converted to harmony yet.
 
 
 # Fixes explained, used dnSpy to make the modifications

@@ -6,7 +6,7 @@ Based on V0.14.0.1 from OCT 21, 2020
 
 
 # BepInEx
-I converted the following fixes to Harmony, you can then use BepInEx to load Harmony mods with the game.
+I converted the the first three fixes to Harmony (you can check them below), you can then use BepInEx to load Harmony mods with the game.
 https://github.com/BepInEx/BepInEx
 
 I tested using this version, it needs to be x86 for this game in particular on the current version stated above.

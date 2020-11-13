@@ -51,6 +51,8 @@ https://github.com/purpleorangegames/portalsofphereonsmallfixes/releases/downloa
 
 # Fixes explained, used dnSpy to make the modifications
 
+Making mofications using dnSpy is very different from making them using Harmony, in this case, since I prefer to use only prefix and postfix patches with it.
+So the explanation below is not the same as the DLLs explained above.
 
 ### Fix: Reset loads left in Limited Save mode when player starts a NewGamePlus (ng+)
 

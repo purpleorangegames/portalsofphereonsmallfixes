@@ -23,7 +23,7 @@ namespace DuplicatedCharactersOnBattleSummaryFix
     public class DuplicatedCharactersOnBattleSummaryFix : BaseUnityPlugin
     {
         public const string GUID = "net.pog.portalsofphereon.mod.DuplicatedCharactersOnBattleSummaryFix";
-        public const string Name = "Limited Save Mode Reset Count On NGPlus Fix";
+        public const string Name = "Duplicated Characters on Battle Summary Fix";
         public const string Version = "1.0";
 
         private void Start()

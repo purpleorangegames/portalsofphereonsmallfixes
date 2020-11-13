@@ -12,20 +12,31 @@ https://github.com/BepInEx/BepInEx
 I tested using this version, it needs to be x86 for this game in particular on the current version stated above.
 https://github.com/BepInEx/BepInEx/releases/download/v5.4/BepInEx_x86_5.4.0.0.zip
 
+
 To install BepInEx first go to the Portals of Phereon folder, after downloading the file above:
+
 ![Mod](https://github.com/purpleorangegames/portalsofphereonsmallfixes/blob/main/Images/2020-11-13%2013_27_31-POPExample.png?raw=true)
 
+
 Then open the zip file, I use 7z, which you can see here, and copy the files:
+
 ![Mod](https://github.com/purpleorangegames/portalsofphereonsmallfixes/blob/main/Images/2020-11-13%2013_28_07-BepInEx_x86_5.4.0.0.zip_.png?raw=true)
 
+
 You will end up like this:
+
 ![Mod](https://github.com/purpleorangegames/portalsofphereonsmallfixes/blob/main/Images/2020-11-13%2013_28_21-POPExample.png?raw=true)
 
+
 Then in the new BepInEx folder, enter it and create a new folder called 'plugins':
+
 ![Mod](https://github.com/purpleorangegames/portalsofphereonsmallfixes/blob/main/Images/2020-11-13%2013_29_11-BepInEx.png?raw=true)
 
+
 Inside this folder you can put the plugins I've made, they are all DLLs, like this:
+
 ![Mod](https://github.com/purpleorangegames/portalsofphereonsmallfixes/blob/main/Images/2020-11-13%2013_29_26-plugins.png?raw=true)
+
 
 You can choose which to use, exclude the ones you don't want.
 

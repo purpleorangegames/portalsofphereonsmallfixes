@@ -30,7 +30,7 @@ You will end up like this:
 
 Then in the new BepInEx folder, enter it and create a new folder called 'plugins':
 
-![Mod](https://github.com/purpleorangegames/portalsofphereonsmallfixes/blob/main/Images/2020-11-13%2013_29_11-BepInEx.png?raw=true)
+![Mod](https://github.com/purpleorangegames/portalsofphereonsmallfixes/blob/main/Images/2020-11-13%2013_29_11-BepInEx.png2?raw=true)
 
 
 Inside this folder you can put the plugins I've made, they are all DLLs, like this:

@@ -5,6 +5,39 @@ Here I will post small fixes that I end up making for the game while I play it.
 Based on V0.14.0.1 from OCT 21, 2020
 
 
+# BepInEx
+I converted the following fixes to Harmony, you can then use BepInEx to load Harmony mods with the game.
+https://github.com/BepInEx/BepInEx
+
+I tested using this version, it needs to be x86 for this game in particular on the current version stated above.
+https://github.com/BepInEx/BepInEx/releases/download/v5.4/BepInEx_x86_5.4.0.0.zip
+
+To install BepInEx first go to the Portals of Phereon folder, after downloading the file above:
+![Mod](https://github.com/purpleorangegames/portalsofphereonsmallfixes/blob/main/Images/2020-11-13%2013_27_31-POPExample.png?raw=true)
+
+Then open the zip file, I use 7z, which you can see here, and copy the files:
+![Mod](https://github.com/purpleorangegames/portalsofphereonsmallfixes/blob/main/Images/2020-11-13%2013_28_07-BepInEx_x86_5.4.0.0.zip_.png?raw=true)
+
+You will end up like this:
+![Mod](https://github.com/purpleorangegames/portalsofphereonsmallfixes/blob/main/Images/2020-11-13%2013_28_21-POPExample.png?raw=true)
+
+Then in the new BepInEx folder, enter it and create a new folder called 'plugins':
+![Mod](https://github.com/purpleorangegames/portalsofphereonsmallfixes/blob/main/Images/2020-11-13%2013_29_11-BepInEx.png?raw=true)
+
+Inside this folder you can put the plugins I've made, they are all DLLs, like this:
+![Mod](https://github.com/purpleorangegames/portalsofphereonsmallfixes/blob/main/Images/2020-11-13%2013_29_26-plugins.png?raw=true)
+
+You can choose which to use, exclude the ones you don't want.
+
+You can download all the source code which contains the dlls or just the dlls here:
+https://github.com/purpleorangegames/portalsofphereonsmallfixes/releases/download/1/PortalOfPhereonSmallFixes_2020_11_13.7z
+
+The last fix about the list sort persistence hasn't been converted to harmony yet.
+
+
+# Fixes explained, used dnSpy to make the modifications
+
+
 ### Fix: Reset loads left in Limited Save mode when player starts a NewGamePlus (ng+)
 
 ![Mod](https://github.com/purpleorangegames/portalsofphereonsmallfixes/blob/main/Images/POPSmallFixLoadsLeftNGP.png?raw=true)

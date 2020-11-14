@@ -12,6 +12,7 @@ Based on V0.14.0.1 from OCT 21, 2020
 
 # BepInEx
 I converted all four fixes to Harmony (you can check them below), you can then use BepInEx to load Harmony mods with the game.
+Added another mod made only in Harmony that doubles the hostility from portals.
 https://github.com/BepInEx/BepInEx
 
 I tested using this version, it needs to be x86 for this game in particular on the current version stated above.
@@ -201,3 +202,10 @@ public void updateHome(bool alsoUpdateParty = true)
 {
 	this.sortHome();
 ```
+
+
+### Mod: Double Average Hostility of World
+
+This one I made directly into Harmony, it basically makes a list that is reset when initPortals(..) at TownManager.cs runs and after that everytime getEntryCost(..) at Portal.cs runs it doubles the average hostility and adds the id to the list so it won't double again.
+
+![Mod](https://github.com/purpleorangegames/portalsofphereonsmallfixes/blob/main/Images/2020-11-14%2013_57_11-PortalsOfPhereon.png?raw=true)

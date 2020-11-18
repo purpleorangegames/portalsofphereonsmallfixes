@@ -211,7 +211,7 @@ This one I made directly into Harmony, it basically makes a list that is reset w
 ![Mod](https://github.com/purpleorangegames/portalsofphereonsmallfixes/blob/main/Images/2020-11-14%2013_57_11-PortalsOfPhereon.png?raw=true)
 
 
-### Mod: Double Average Hostility of World
+### Mod: High Level Trait Synergy
 
 Also made directly into Harmony, this mod will start when you initiate combat and when each enemy spawns.
 It checks for units above level 15, then chooses one of four profiles for it (strength, magic, seductive or normal) and also try to add a few points of genes.

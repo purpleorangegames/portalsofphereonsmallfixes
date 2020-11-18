@@ -49,7 +49,6 @@ namespace DoubleAverageHostilityOfWorld
         static void Prefix(TownManager __instance)
         {
             variables.list.Clear();
-            UnityEngine.Debug.Log("initPortals -------------------");
         }
     }
 
@@ -64,7 +63,6 @@ namespace DoubleAverageHostilityOfWorld
                 {
                     p.world.averageHostility *= variables.multiplier;
                     variables.list.Add(p.world.id);
-                    UnityEngine.Debug.Log("added s------------------- "+ p.world.id);
                 }
 
             foreach (Portal p in SaveController.instance.randomPortals)
@@ -72,7 +70,6 @@ namespace DoubleAverageHostilityOfWorld
                 {
                     p.world.averageHostility *= variables.multiplier;
                     variables.list.Add(p.world.id);
-                    UnityEngine.Debug.Log("added r------------------- " + p.world.id);
                 }
 
             foreach (Portal p in SaveController.instance.eventPortals)
@@ -80,7 +77,6 @@ namespace DoubleAverageHostilityOfWorld
                 {
                     p.world.averageHostility *= variables.multiplier;
                     variables.list.Add(p.world.id);
-                    UnityEngine.Debug.Log("added e------------------- " + p.world.id);
                 }
         }
     }
@@ -92,24 +88,14 @@ namespace DoubleAverageHostilityOfWorld
         static void Postfix()
         {
             variables.list.Clear();
-            UnityEngine.Debug.Log("initPortals loadGame-------------------");
             foreach (Portal p in SaveController.instance.stabilizedPortals)
-            {
                 variables.list.Add(p.world.id);
-                UnityEngine.Debug.Log("added s------------------- " + p.world.id);
-            }
 
             foreach (Portal p in SaveController.instance.randomPortals)
-            {
                 variables.list.Add(p.world.id);
-                UnityEngine.Debug.Log("added r------------------- " + p.world.id);
-            }
 
             foreach (Portal p in SaveController.instance.eventPortals)
-            {
                 variables.list.Add(p.world.id);
-                UnityEngine.Debug.Log("added e------------------- " + p.world.id);
-            }
         }
     }
     

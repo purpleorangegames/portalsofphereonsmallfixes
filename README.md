@@ -12,7 +12,7 @@ Based on V0.14.0.1 from OCT 21, 2020
 
 # BepInEx
 I converted all four fixes to Harmony (you can check them below), you can then use BepInEx to load Harmony mods with the game.
-Added another mod made only in Harmony that doubles the hostility from portals.
+Added two other mods made only in Harmony that doubles the hostility from portals.
 https://github.com/BepInEx/BepInEx
 
 I tested using this version, it needs to be x86 for this game in particular on the current version stated above.
@@ -209,3 +209,14 @@ public void updateHome(bool alsoUpdateParty = true)
 This one I made directly into Harmony, it basically makes a list that is reset when initPortals(..) at TownManager.cs runs and after that everytime getEntryCost(..) at Portal.cs runs it doubles the average hostility and adds the id to the list so it won't double again.
 
 ![Mod](https://github.com/purpleorangegames/portalsofphereonsmallfixes/blob/main/Images/2020-11-14%2013_57_11-PortalsOfPhereon.png?raw=true)
+
+
+### Mod: Double Average Hostility of World
+
+Also made directly into Harmony, this mod will start when you initiate combat and when each enemy spawns.
+It checks for units above level 15, then chooses one of four profiles for it (strength, magic, seductive or normal) and also try to add a few points of genes.
+For each profile there is a set of traits the creature can get, each with a different 'rarity' level.
+The purpose of the mod is to make specialized enemies, since we will have a specializes team it makes sense for me for the enemy to also become stronger over time (as level increases). 
+
+![Mod](https://github.com/purpleorangegames/portalsofphereonsmallfixes/blob/main/Images/2020-11-17%2021_59_52-PortalsOfPhereon.png?raw=true)
+
